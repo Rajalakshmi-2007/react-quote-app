@@ -5,19 +5,19 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo 'Checking out Java project from GitHub...'
+                echo 'Checking out React project from GitHub...'
             }
         }
 
         stage('Compile') {
             steps {
-                echo 'Compiling Java source code...'
+                echo 'Compiling react source code...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Checking compiled Java classes...'
+                echo 'Checking compiled react classes...'
             }
         }
 
@@ -37,14 +37,14 @@ pipeline {
     post {
         success {
             echo '======================================'
-            echo ' Employee Management System'
+            echo ' React Quote App'
             echo ' CI/CD PIPELINE SUCCESSFUL'
             echo '======================================'
         }
 
         failure {
             echo '======================================'
-            echo ' Employee Management System'
+            echo ' React Quote App'
             echo ' CI/CD PIPELINE FAILED'
             echo '======================================'
         }
